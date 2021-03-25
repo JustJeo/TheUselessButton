@@ -1,0 +1,2 @@
+# The Useless Button
+This is The Useless Button, created with an inspiration from "The World's Most Useless Box" and although this is not a physical button like there is a physical box, I wanted to have my fun with a snarky little button
