@@ -5,4 +5,12 @@
 
 html {
   text-align: center;
+  font-size: 2em;
+}
+
+button {
+  font-size: 2em;
+  background-color: red;
+  padding: 15px;
+  border-radius: 10%;
 }
