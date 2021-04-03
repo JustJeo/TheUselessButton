@@ -3,21 +3,25 @@ console.log("AYO! This is Jeo!")
 
 // Fired function
   // User clicks button
-
-  // Button relays response
+  // Button turns ON
+    // Button changes to blue with "ON"
+  //Button relays response
     // Button randomly chooses a response
-    // Displays snarky response to user
+    // Displays response to user
   // Button turns OFF
     // Button changes back to red with "OFF"
 
-let game = {
-  buttonChange: function() {
-      // Button turns ON
-        // Button changes to blue with "ON"
+let uselessGame = {
+    // Button turns ON
+    buttonChange: function() {
+      // Button changes to blue with "ON"
   },
 
+  // Button relays response
   response: function() {
+    // Button randomly chooses a response
     let randomResponse = Math.floor(Math.random()*5);
+    // Displays snarky response to user
     if (randomResponse === 4) {
       document.getElementsByClassName("response").innerHTML = "HEY! Who turned on the light?! I'm sleeping here!"
     } else if (randomResponse === 3) {
@@ -32,6 +36,8 @@ let game = {
   }
 }
 
+// Fired Function
+  // User clicks button
 function clickedButton() {
 
 }
