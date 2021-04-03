@@ -1,6 +1,5 @@
 * {
-  background-color: black;
-  color: white;
+  background-color: gold;
 }
 
 html {
@@ -10,7 +9,12 @@ html {
 
 button {
   font-size: 2em;
+  color: white;
   background-color: red;
   padding: 15px;
-  border-radius: 10%;
+  border-radius: 5%;
+}
+
+button:focus {
+  background-color: blue;
 }
