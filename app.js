@@ -12,13 +12,8 @@ console.log("AYO! This is Jeo!")
     // Button changes back to red with "OFF"
 
 let uselessGame = {
-    // Button turns ON
-    buttonChange: function() {
-      // Button changes to blue with "ON"
-  },
-
   // Button relays response
-  response: function() {
+  answer: function() {
     // Button randomly chooses a response
     let randomResponse = Math.floor(Math.random()*5);
     // Displays snarky response to user
@@ -33,11 +28,15 @@ let uselessGame = {
     } else {
       document.getElementsByClassName("response").innerHTML = "...No."
     }
-  }
+  },
 }
+
 
 // Fired Function
   // User clicks button
-function clickedButton() {
-
-}
+const pushed = document.getElementsByClassName("push")
+pushed.addEventListener("click", () => {
+  // Display Response
+  document.getElementsByClassName("response").style.display = "block"
+  document.querySelector(".response").innerHTML = "Meow"
+})
