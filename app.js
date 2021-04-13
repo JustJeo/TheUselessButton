@@ -31,7 +31,6 @@ let uselessGame = {
   },
 }
 
-
 // Fired Function
   // User clicks button
 const pushed = document.getElementsByClassName("push")
