@@ -17,6 +17,7 @@ let uselessGame = {
     // Button randomly chooses a response
     let randomResponse = Math.floor(Math.random()*5);
     // Displays snarky response to user
+    // Look into possibly changing to a Switch function to eliminate long "else if" function
     if (randomResponse === 4) {
       document.getElementsByClassName("response").innerHTML = "HEY! Who turned on the light?! I'm sleeping here!"
     } else if (randomResponse === 3) {
@@ -31,11 +32,13 @@ let uselessGame = {
   },
 }
 
+// Connect DOM manipulation to change "response"
 // Fired Function
   // User clicks button
 const pushed = document.getElementsByClassName("push")
 pushed.addEventListener("click", () => {
   // Display Response
   document.getElementsByClassName("response").style.display = "block"
+  // Enters hard coded change to ensure that DOM manipulation is connected
   document.querySelector(".response").innerHTML = "Meow"
 })
